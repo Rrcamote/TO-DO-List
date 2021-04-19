@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="online-container"><br>
+        <div class="online-header">
+            <div class="">
+               <h3 class=""> <i class="fas fa-users"></i> Active Now</h3>
+            </div>
+        </div>
+        <hr>
+        <div class="online-section">
+            <div class="online-wrapper">
+                <div class="online-content">
+                    <ul id="online-mi">
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <br><br>
+
+    <div class="chat-container">
+        
+        <div class="chat-header">
+            <div class="logo">
+                <h3 class="chat">Chat<span id="hub">Hub</span></h3>
+            </div><br>
+           <p id="your-name">Your Name</p>
+        </div>
+
+        <div class="chat-section">
+            <div class="main-wrapper">
+                <div class="chat-content">
+                    <div class="message">
+                        <div class="joining">
+
+                        </div>
+                        <div class="message-row other-message">
+
+                        </div>
+                        <div class="message-row you-message">
+
+                        </div>
+                        
+                    </div>
+                    <div class="typing">
+                    </div>
+                </div>
+               
+                <form class="msg-tex">
+                    <input type="text" name="msg" id="msg" placeholder="Type Message Here...." autocomplete="off" required>
+                    <button id="btn-send">
+                        <i class="fas fa-paper-plane"> Send</i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>
